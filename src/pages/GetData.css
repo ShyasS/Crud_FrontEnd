@@ -1,0 +1,12 @@
+.bgimg{
+    background-image: url('../assets/pexels-drew-williams-1285451-3483967.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img1{
+    background-color:transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

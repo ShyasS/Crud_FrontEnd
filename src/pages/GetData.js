@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './GetData.css';
 
 const GetData = () => {
     const [users, setUsers] = useState('')
@@ -25,8 +26,8 @@ const GetData = () => {
         })
     }
     return (
-        <div className=' vh-100 bg-primary d-flex justify-content-center align-items-center' >
-            <div className='col-lg-6 col-md-10 col-12 bg-white rounded p-3'>
+        <div className=' vh-100 bgimg d-flex justify-content-center align-items-center' >
+            <div className='col-lg-6  col-md-10 col-12 bg-white rounded p-3'>
                    <Link to={'/create'} className='btn btn-success'>Add+</Link>
                    <div className="table-responsive">
                 <table class="table">
