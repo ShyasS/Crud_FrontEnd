@@ -25,9 +25,10 @@ const GetData = () => {
         })
     }
     return (
-        <div className='vh-100 bg-primary d-flex justify-content-center align-items-center' >
-            <div className='col-md-6 col-12 bg-white rounded p-3'>
+        <div className=' vh-100 bg-primary d-flex justify-content-center align-items-center' >
+            <div className='col-lg-6 col-md-10 col-12 bg-white rounded p-3'>
                    <Link to={'/create'} className='btn btn-success'>Add+</Link>
+                   <div className="table-responsive">
                 <table class="table">
                     <thead>
                         <tr>
@@ -54,6 +55,7 @@ const GetData = () => {
                     </tbody>
                 </table>
             </div>
+        </div>
         </div>
     )
 }
