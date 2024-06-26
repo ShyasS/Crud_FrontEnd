@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const GetData = () => {
     const [users, setUsers] = useState('')
     useEffect(() => {
-        axios.get('http://localhost:5001/api')
+        axios.get('https://crud-backend-xn5l.onrender.com/api')
             .then((response) => {
                 setUsers(response.data)
             })
@@ -15,7 +15,7 @@ const GetData = () => {
     }, [])
 
     const handleDelete =(id)=>{
-        axios.delete('http://localhost:5001/api/'+id)
+        axios.delete('https://crud-backend-xn5l.onrender.com/api/'+id)
         .then(function (response) {
           console.log(response.data);
           window.location.reload();

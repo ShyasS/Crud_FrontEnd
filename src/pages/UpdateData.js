@@ -9,7 +9,7 @@ const UpdateData = () => {
     const navigate = useNavigate();
 
     useEffect(()=>{
-        axios.get('http://localhost:5001/api/'+id)
+        axios.get('https://crud-backend-xn5l.onrender.com/api/'+id)
   .then( (response)=> {
     console.log(response.data.name)
     setName(response.data.name)
@@ -21,7 +21,7 @@ const UpdateData = () => {
     },[])
 
     const handleSubmit = async() => {
-        await axios.put('http://localhost:5001/api/'+id, {name, email})
+        await axios.put('https://crud-backend-xn5l.onrender.com/api/'+id, {name, email})
         .then( (response) => {
           console.log(response.data);
           navigate('/')

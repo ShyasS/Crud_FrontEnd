@@ -8,7 +8,7 @@ const CreateData = () => {
     const navigate = useNavigate();
 
     const handleSubmit = async() => {
-        await axios.post('http://localhost:5001/api', {name, email})
+        await axios.post('https://crud-backend-xn5l.onrender.com/api/', {name, email})
         .then( (response) => {
           console.log(response.data);
           navigate('/')
